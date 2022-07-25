@@ -13,6 +13,44 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <div class="input-group w-50">
+        <input type="file" class="form-control photo" id="inputGroupFile02">
+      </div>
+      <div class="input-group w-50">
+        <span class="input-group-text">First and last name</span>
+        <input type="text" aria-label="First name" class="form-control name">
+        <input type="text" aria-label="Last name" class="form-control surname">
+      </div>
+      <div class="input-group w-50">
+        <span class="input-group-text" id="inputGroup-sizing-default">KPI</span>
+        <input type="text" class="form-control kpi" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <div class="input-group w-50">
+        <label class="input-group-text" for="inputGroupSelect01">Group...</label>
+        <select class="form-select groups" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">JS 22</option>
+            <option value="2">Python 22</option>
+            <option value="3">JS 23</option>
+        </select>
+      </div>
+      <div class="input-group w-50">
+        <span class="input-group-text" id="inputGroup-sizing-default">Phone number</span>
+        <input type="text" class="form-control number" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <div class="input-group w-50">
+        <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+        <input type="text" class="form-control email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <div class="input-group w-50">
+        <span class="input-group-text" id="inputGroup-sizing-default">GitHub username</span>
+        <input type="text" class="form-control gitHub" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>  
+      <button class="btn btn-primary w-50 button" id="btn-add">Save</button>
+    </div>
+
+    <div id="products-list" class="d-flex justify-content-center flex-wrap mt-5"></div>
     <script src="./main.js"></script>
 </body>
 </html>
